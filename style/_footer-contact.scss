@@ -1,0 +1,99 @@
+.footer-contact {
+    background: white;
+
+    .footer__section-second {
+        @include padding(165px);
+        height: 321px;
+        background: $color-black;
+        color: rgba(255, 255, 255, 0.493);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media screen and (max-width: 915px) {
+            @include padding(60px);
+        }
+        @media screen and (max-width: 768px) {
+            @include padding(40px);
+        }
+        @media screen and (max-width: 670px) {
+            @include padding(24px);
+        }
+        @media screen and (max-width: 630px) {
+            height: 626px;
+        }
+        a {
+            color: $color-white;
+        }
+        i {
+            color: $color-peach;
+        }
+        h4 {
+            font-weight: 700;
+        }
+        .footer__section-second__nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: -10px;
+            margin-bottom: 60px;
+            @media screen and (max-width: 915px) {
+                margin-top: -30px;
+            }
+            @media screen and (max-width: 630px) {
+                height: 50%;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 64px;
+                margin-bottom: 50px;
+            }
+            ul {
+                display: flex;
+                position: relative;
+                margin-top: -10px;
+                @media screen and (max-width: 915px) {
+                    margin-top: -10px;
+                }
+                @media screen and (max-width: 630px) {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 60px;
+                    margin-bottom: 0px;
+                }
+                li {
+                    cursor: pointer;
+                    padding: 15px 0 15px 42px;
+                    @media screen and (max-width: 630px) {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        .footer__section-second__info {
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: 630px) {
+                flex-direction: column;
+                align-items: center;
+                height: 50%;
+                text-align: center;
+                margin-bottom: 67px;
+                gap: 40px;
+            }
+            .contact {
+                p {
+                    font-weight: 700;
+                }
+            }
+            .social {
+                display: flex;
+                align-items: flex-end;
+                ul {
+                    display: flex;
+                    gap: 16px;
+                    i {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

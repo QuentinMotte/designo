@@ -100,6 +100,8 @@ footer {
             justify-content: space-between;
             margin-top: 50px;
             margin-bottom: 60px;
+            position: relative;
+            align-items: center;
             @media screen and (max-width: 630px) {
                 height: 50%;
                 flex-direction: column;
@@ -123,22 +125,17 @@ footer {
                         padding: 10px;
                     }
                 }
-                &::before {
-                    position: absolute;
-                    content: "";
-                    border: solid 1px grey;
-                    width: 1111px;
-                    right: 0;
-                    bottom: -30px;
-                    @media screen and (max-width: 915px) {
-                        width: 690px;
-                    }
-                    @media screen and (max-width: 630px) {
-                        width: 327px;
-                        bottom: 160px;
-                        right: 50%;
-                        transform: translate(50%);
-                    }
+            }
+            span {
+                position: absolute;
+                width: 100%;
+                background: grey;
+                height: 1px;
+                left: -50%;
+                transform: translate(50%);
+                bottom: -20px;
+                @media screen and (max-width: 630px) {
+                    bottom: 140px;
                 }
             }
         }
