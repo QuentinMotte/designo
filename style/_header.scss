@@ -1,0 +1,51 @@
+header {
+    section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            height: 155px;
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: 501px) {
+                height: 96px;
+            }
+        }
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 39px;
+            right: 24px;
+            span {
+                width: 24px;
+                height: 4px;
+                background: $color-black;
+                margin: 2px;
+            }
+            @media screen and (min-width: 501px) {
+                display: none;
+            }
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: 915px) {
+                font-size: 14px;
+            }
+            @media screen and (max-width: 700px) {
+                font-size: 10px;
+            }
+            @media screen and (max-width: 501px) {
+                display: none;
+            }
+            li {
+                cursor: pointer;
+                padding: 15px 0 15px 42px;
+                a {
+                    color: $color-black;
+                }
+            }
+        }
+    }
+}
