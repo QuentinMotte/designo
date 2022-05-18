@@ -66,9 +66,9 @@
         max-width: 100%;
         display: flex;
         justify-content: space-around;
-        
+
         height: 640px;
-        
+
         margin-bottom: 160px;
 
         article {
@@ -81,13 +81,11 @@
             position: relative;
 
             .img-link {
-            
                 img {
                     position: absolute;
                     top: 0;
                     left: -50%;
                     object-fit: cover;
-                    
                 }
             }
 
@@ -99,32 +97,28 @@
                 align-items: center;
                 color: $color-white;
 
-                h3{
+                h3 {
                     color: $color-white;
                 }
-            
-            } 
+            }
         }
-        
+
         .link-right {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            
+
             .img-link {
-            
                 img {
                     position: absolute;
                     top: -150%;
                     left: -50%;
                     object-fit: cover;
-                    
                 }
             }
         }
     }
-<<<<<<< HEAD
 
     .section__info {
         max-width: 100%;
@@ -159,6 +153,4 @@
             }
         }
     }
-=======
->>>>>>> 45665cd2e5576521c879d4c56c6771c5185d9550
 }
