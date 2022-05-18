@@ -418,6 +418,8 @@ footer .footer__section-second .footer__section-second__info .social ul i {
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
+  border-radius: 15px;
 }
 .main-web-app-design .main-web-design__header h1 {
   color: #ffffff;
@@ -434,9 +436,28 @@ footer .footer__section-second .footer__section-second__info .social ul i {
   margin-top: 160px;
   margin-bottom: 160px;
 }
-.main-web-app-design .main-web-design__cards .cards .cards__image {
+@media screen and (max-width: 1100px) {
+  .main-web-app-design .main-web-design__cards {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .main-web-app-design .main-web-design__cards .cards {
+    display: flex;
+    height: 310px;
+  }
+}
+.main-web-app-design .main-web-design__cards .cards .cards__image img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+@media screen and (max-width: 1100px) {
+  .main-web-app-design .main-web-design__cards .cards .cards__image img {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+    height: 310px;
+  }
 }
 .main-web-app-design .main-web-design__cards .cards .cards__text {
   margin-top: -10px;
@@ -450,6 +471,26 @@ footer .footer__section-second .footer__section-second__info .social ul i {
   justify-content: space-evenly;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+@media screen and (max-width: 1100px) {
+  .main-web-app-design .main-web-design__cards .cards .cards__text {
+    height: 310px;
+    margin-top: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    justify-content: center;
+  }
+}
+.main-web-app-design .main-web-design__cards .cards .cards__text:hover {
+  background: #e7816b;
+}
+.main-web-app-design .main-web-design__cards .cards .cards__text:hover h3 {
+  color: white;
+}
+.main-web-app-design .main-web-design__cards .cards .cards__text:hover p {
+  color: white;
 }
 .main-web-app-design .main-web-design__cards .cards .cards__text h3 {
   margin-top: 32px;
@@ -466,6 +507,14 @@ footer .footer__section-second .footer__section-second__info .social ul i {
   margin-left: 155px;
   margin-bottom: 160px;
 }
+@media screen and (max-width: 1100px) {
+  .main-web-app-design .navigation-link {
+    flex-direction: column;
+    height: 424px;
+    margin-left: 90px;
+    margin-bottom: 135px;
+  }
+}
 .main-web-app-design .navigation-link .img-link {
   position: relative;
 }
@@ -478,6 +527,12 @@ footer .footer__section-second .footer__section-second__info .social ul i {
      object-fit: cover;
   transform: translate(-50%);
 }
+@media screen and (max-width: 1100px) {
+  .main-web-app-design .navigation-link .img-link img {
+    width: 689px;
+    height: 200px;
+  }
+}
 .main-web-app-design .navigation-link .link {
   position: relative;
   align-items: center;
@@ -486,6 +541,11 @@ footer .footer__section-second .footer__section-second__info .social ul i {
   flex-direction: column;
   justify-content: center;
   height: 308px;
+}
+@media screen and (max-width: 1100px) {
+  .main-web-app-design .navigation-link .link {
+    height: 190px;
+  }
 }
 .main-web-app-design .navigation-link .link h2 {
   color: white;

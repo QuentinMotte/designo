@@ -7,6 +7,8 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        width: 100%;
+        border-radius: 15px;
         h1 {
             color: $color-white;
             padding-bottom: 25px;
@@ -22,10 +24,25 @@
         gap: 30px;
         margin-top: 160px;
         margin-bottom: 160px;
+        @media screen and (max-width: 1100px) {
+            margin-top: 120px;
+            margin-bottom: 120px;
+        }
         .cards {
+            @media screen and (max-width: 1100px) {
+                display: flex;
+                height: 310px;
+            }
             .cards__image {
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
+                img {
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                    @media screen and (max-width: 1100px) {
+                        border-top-right-radius: 0;
+                        border-bottom-left-radius: 15px;
+                        height: 310px;
+                    }
+                }
             }
             .cards__text {
                 margin-top: -10px;
@@ -39,6 +56,24 @@
                 justify-content: space-evenly;
                 border-bottom-left-radius: 15px;
                 border-bottom-right-radius: 15px;
+                cursor: pointer;
+                transition: 0.2s;
+                @media screen and (max-width: 1100px) {
+                    height: 310px;
+                    margin-top: 0;
+                    border-bottom-left-radius: 0;
+                    border-top-right-radius: 15px;
+                    justify-content: center;
+                }
+                &:hover {
+                    background: $color-peach;
+                    h3 {
+                        color: white;
+                    }
+                    p {
+                        color: white;
+                    }
+                }
                 h3 {
                     margin-top: 32px;
                     color: $color-peach;
@@ -56,6 +91,12 @@
         margin-right: 100px;
         margin-left: 155px;
         margin-bottom: 160px;
+        @media screen and (max-width: 1100px) {
+            flex-direction: column;
+            height: 424px;
+            margin-left: 90px;
+            margin-bottom: 135px;
+        }
         .img-link {
             position: relative;
             img {
@@ -65,6 +106,10 @@
                 left: 50%;
                 object-fit: cover;
                 transform: translate(-50%);
+                @media screen and (max-width: 1100px) {
+                    width: 689px;
+                    height: 200px;
+                }
             }
         }
         .link {
@@ -75,6 +120,9 @@
             flex-direction: column;
             justify-content: center;
             height: 308px;
+            @media screen and (max-width: 1100px) {
+                height: 190px;
+            }
             h2 {
                 color: white;
             }
