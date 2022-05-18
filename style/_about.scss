@@ -1,0 +1,117 @@
+.main-about {
+    .block {
+        display: flex;
+        margin-bottom: 160px;
+        @media screen and (max-width: 1100px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 689px;
+            img {
+                width: 689px;
+            }
+        }
+
+        .text {
+            background: $color-light-peach-background;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2,
+            .div-text {
+                padding: 30px 80px;
+                @media screen and (max-width: 1200px) {
+                    padding: 10px 10px;
+                }
+            }
+        }
+    }
+    .main-about__header {
+        .text {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            background: url(../img/about/Oval\(2\).png);
+            height: 480px;
+            @media screen and (max-width: 1100px) {
+                min-height: 50%;
+                border-top-right-radius: 15px;
+                background: $color-peach;
+                border-bottom-left-radius: 0;
+            }
+            h2 {
+                color: white;
+            }
+            p {
+                color: white;
+            }
+        }
+
+        img {
+            @media screen and (max-width: 1100px) {
+                height: 50%;
+                border-bottom-left-radius: 15px;
+            }
+        }
+        @media screen and (max-width: 1100px) {
+            height: 632px;
+        }
+    }
+    .second-block {
+        .text {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            height: 640px;
+            h2 {
+                color: $color-peach;
+            }
+            @media screen and (max-width: 1100px) {
+                min-height: 386px;
+                margin-top: -6px;
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 15px;
+            }
+        }
+
+        img {
+            @media screen and (max-width: 1100px) {
+                height: 350px;
+                border-top-right-radius: 15px;
+                border-top-left-radius: 15px;
+            }
+        }
+        @media screen and (max-width: 1100px) {
+            height: 736px;
+        }
+    }
+    .last-block {
+        .text {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            height: 640px;
+            h2 {
+                color: $color-peach;
+            }
+        }
+        @media screen and (max-width: 1100px) {
+            height: 736px;
+        }
+    }
+    .location {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 160px;
+        text-align: center;
+        h3 {
+            margin-top: 48px;
+            margin-bottom: 32px;
+        }
+        button {
+            color: white;
+            background: $color-peach;
+            transition: 0.2s;
+            &:hover {
+                background: $color-light-peach;
+            }
+        }
+    }
+}
