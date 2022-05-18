@@ -1,0 +1,19 @@
+.main-web-design {
+    .main-web-design__header {
+        background: url(../img/web-design/Oval.png);
+        height: 252px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        h1 {
+            color: $color-white;
+            padding-bottom: 25px;
+        }
+        p {
+            color: $color-white;
+            width: 410px;
+        }
+    }
+}

@@ -101,6 +101,7 @@ body h2 {
   line-height: 48px;
 }
 body h3 {
+  text-transform: uppercase;
   font-size: 20px;
   line-height: 26px;
   letter-spacing: 5px;
@@ -389,6 +390,42 @@ footer .footer__section-second .footer__section-second__info .social ul {
 }
 footer .footer__section-second .footer__section-second__info .social ul i {
   font-size: 1.5rem;
+}
+
+.main-app-design .main-web-design__header {
+  background: url(../img/web-design/Oval.png);
+  height: 252px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main-app-design .main-web-design__header h1 {
+  color: #ffffff;
+  padding-bottom: 25px;
+}
+.main-app-design .main-web-design__header p {
+  color: #ffffff;
+  width: 410px;
+}
+
+.main-web-design .main-web-design__header {
+  background: url(../img/web-design/Oval.png);
+  height: 252px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main-web-design .main-web-design__header h1 {
+  color: #ffffff;
+  padding-bottom: 25px;
+}
+.main-web-design .main-web-design__header p {
+  color: #ffffff;
+  width: 410px;
 }
 
 .footer-contact {
