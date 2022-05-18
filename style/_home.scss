@@ -66,9 +66,9 @@
         max-width: 100%;
         display: flex;
         justify-content: space-around;
-        
+
         height: 640px;
-        
+
         margin-bottom: 160px;
 
         article {
@@ -81,13 +81,11 @@
             position: relative;
 
             .img-link {
-            
                 img {
                     position: absolute;
                     top: 0;
                     left: -63%;
                     object-fit: cover;
-                    
                 }
             }
 
@@ -99,13 +97,12 @@
                 align-items: center;
                 color: $color-white;
 
-                h3{
+                h3 {
                     color: $color-white;
                 }
-            
-            } 
+            }
         }
-        
+
         .link-right {
             display: flex;
             flex-direction: column;
@@ -119,13 +116,11 @@
             }
             
             .img-link {
-            
                 img {
                     position: absolute;
                     top: -150%;
                     left: -64%;
                     object-fit: cover;
-                    
                 }
             }
         }
