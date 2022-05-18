@@ -409,8 +409,12 @@ footer .footer__section-second .footer__section-second__info .social ul i {
   color: #ffffff;
   width: 410px;
 }
+.main-app-design .main-web-design__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
-.main-web-design .main-web-design__header {
+.main-web-app-design .main-web-design__header {
   background: url(../img/web-design/Oval.png);
   height: 252px;
   display: flex;
@@ -419,13 +423,17 @@ footer .footer__section-second .footer__section-second__info .social ul i {
   justify-content: center;
   text-align: center;
 }
-.main-web-design .main-web-design__header h1 {
+.main-web-app-design .main-web-design__header h1 {
   color: #ffffff;
   padding-bottom: 25px;
 }
-.main-web-design .main-web-design__header p {
+.main-web-app-design .main-web-design__header p {
   color: #ffffff;
   width: 410px;
+}
+.main-web-app-design .main-web-design__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-contact {
