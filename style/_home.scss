@@ -72,21 +72,99 @@
     }
 
     .navigation-link {
+        max-width: 100%;
         display: flex;
-        justify-content: space-between;
-        height: 308px;
+        justify-content: space-around;
+        
+        height: 640px;
+        
+        margin-bottom: 160px;
 
-        .img-link {
+        article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 15px;
             position: relative;
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
+
+            .img-link {
+            
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: -50%;
+                    object-fit: cover;
+                    
+                }
             }
+
+            .link {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: $color-white;
+
+                h3{
+                    color: $color-white;
+                }
+            
+            } 
         }
-        .link {
-            position: relative;
+        
+        .link-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            
+            .img-link {
+            
+                img {
+                    position: absolute;
+                    top: -150%;
+                    left: -50%;
+                    object-fit: cover;
+                    
+                }
+            }
         }
     }
 
+    .section__info {
+        max-width: 100%;
+        margin-bottom: 160px;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: 30px;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                img {
+                    align-self: center;
+                    width: 202px;
+                    height: 202px;
+                    margin-bottom: 48px;
+                }
+
+                h3 {
+                    margin-bottom: 32px;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
