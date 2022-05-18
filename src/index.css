@@ -9,7 +9,7 @@
 body {
   max-width: 1440px;
   margin: 0 auto;
-  background: #f2f2f2;
+  background: white;
 }
 body header {
   background: white;
@@ -409,10 +409,6 @@ footer .footer__section-second .footer__section-second__info .social ul i {
   color: #ffffff;
   width: 410px;
 }
-.main-app-design .main-web-design__cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
 
 .main-web-app-design .main-web-design__header {
   background: url(../img/web-design/Oval.png);
@@ -433,7 +429,69 @@ footer .footer__section-second .footer__section-second__info .social ul i {
 }
 .main-web-app-design .main-web-design__cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+.main-web-app-design .main-web-design__cards .cards .cards__image {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.main-web-app-design .main-web-design__cards .cards .cards__text {
+  margin-top: -10px;
+  max-width: 350px;
+  height: 158px;
+  background: #fdf3f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.main-web-app-design .main-web-design__cards .cards .cards__text h3 {
+  margin-top: 32px;
+  color: #e7816b;
+}
+.main-web-app-design .main-web-design__cards .cards .cards__text p {
+  padding: 16px 32px 32px 32px;
+}
+.main-web-app-design .navigation-link {
+  display: flex;
+  justify-content: space-between;
+  height: 308px;
+  margin-right: 100px;
+  margin-left: 155px;
+  margin-bottom: 160px;
+}
+.main-web-app-design .navigation-link .img-link {
+  position: relative;
+}
+.main-web-app-design .navigation-link .img-link img {
+  position: absolute;
+  border-radius: 15px;
+  top: 0;
+  left: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(-50%);
+}
+.main-web-app-design .navigation-link .link {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 308px;
+}
+.main-web-app-design .navigation-link .link h2 {
+  color: white;
+}
+.main-web-app-design .navigation-link .link a {
+  color: white;
 }
 
 .footer-contact {
