@@ -9,6 +9,11 @@
         text-align: center;
         width: 100%;
         border-radius: 15px;
+        @media screen and (max-width: 500px) {
+            @include margin(-24px);
+            border-radius: 0;
+            background: $color-peach;
+        }
         h1 {
             color: $color-white;
             padding-bottom: 25px;
@@ -28,10 +33,19 @@
             margin-top: 120px;
             margin-bottom: 120px;
         }
+        @media screen and (max-width: 500px) {
+            margin-top: 96px;
+            margin-bottom: 96px;
+        }
         .cards {
             @media screen and (max-width: 1100px) {
                 display: flex;
                 height: 310px;
+            }
+            @media screen and (max-width: 500px) {
+                flex-direction: column;
+                height: 478px;
+                width: 327px;
             }
             .cards__image {
                 img {
@@ -41,6 +55,9 @@
                         border-top-right-radius: 0;
                         border-bottom-left-radius: 15px;
                         height: 310px;
+                    }
+                    @media screen and (max-width: 500px) {
+                        width: 327px;
                     }
                 }
             }
@@ -64,6 +81,12 @@
                     border-bottom-left-radius: 0;
                     border-top-right-radius: 15px;
                     justify-content: center;
+                }
+                @media screen and (max-width: 500px) {
+                    margin-top: -7px;
+                    border-top-right-radius: 0;
+                    border-bottom-left-radius: 15px;
+                    width: 327px;
                 }
                 &:hover {
                     background: $color-peach;
@@ -97,6 +120,9 @@
             margin-left: 90px;
             margin-bottom: 135px;
         }
+        @media screen and (max-width: 500px) {
+            margin-left: 5px;
+        }
         .img-link {
             position: relative;
             img {
@@ -109,6 +135,10 @@
                 @media screen and (max-width: 1100px) {
                     width: 689px;
                     height: 200px;
+                }
+                @media screen and (max-width: 500px) {
+                    width: 327px;
+                    height: 250px;
                 }
             }
         }
@@ -125,9 +155,17 @@
             }
             h2 {
                 color: white;
+                @media screen and (max-width: 500px) {
+                    font-size: 28px;
+                }
             }
             a {
                 color: white;
+                h3 {
+                    @media screen and (max-width: 500px) {
+                        font-size: 15px;
+                    }
+                }
             }
         }
     }
