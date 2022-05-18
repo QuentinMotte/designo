@@ -85,7 +85,7 @@
                 img {
                     position: absolute;
                     top: 0;
-                    left: -50%;
+                    left: -63%;
                     object-fit: cover;
                     
                 }
@@ -111,20 +111,25 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+
+            :first-child{
+                h2{
+                    margin-top: 7px;
+                }
+            }
             
             .img-link {
             
                 img {
                     position: absolute;
                     top: -150%;
-                    left: -50%;
+                    left: -64%;
                     object-fit: cover;
                     
                 }
             }
         }
     }
-<<<<<<< HEAD
 
     .section__info {
         max-width: 100%;
@@ -159,6 +164,4 @@
             }
         }
     }
-=======
->>>>>>> 45665cd2e5576521c879d4c56c6771c5185d9550
 }
