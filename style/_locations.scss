@@ -1,0 +1,25 @@
+.main-locations {
+
+    article{
+        height: 326px;
+
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        img {
+            border-radius: 15px;
+        }
+
+        text {
+            border-radius: 15px;
+            
+            display: flex;
+            
+            ul {
+                display: flex;
+                flex-direction: column;
+                
+            }
+        }
+    }
+}
