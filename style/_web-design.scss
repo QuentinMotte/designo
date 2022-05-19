@@ -119,9 +119,8 @@
         display: flex;
         justify-content: space-between;
         height: 308px;
-        margin-right: 100px;
-        margin-left: 155px;
         margin-bottom: 160px;
+
         @media screen and (max-width: 1100px) {
             flex-direction: column;
             height: 424px;
@@ -135,6 +134,7 @@
         }
         .img-link {
             position: relative;
+
             img {
                 position: absolute;
                 border-radius: 15px;
@@ -160,6 +160,11 @@
             flex-direction: column;
             justify-content: center;
             height: 308px;
+            width: 542px;
+            &:hover {
+                border-radius: 15px;
+                background: $color-peach-opacity;
+            }
             @media screen and (max-width: 1100px) {
                 height: 190px;
             }
