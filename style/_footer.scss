@@ -88,6 +88,18 @@ footer {
         }
         a {
             color: $color-white;
+            &:hover {
+                animation: anim1 0.2s ease-in-out forwards;
+                text-decoration: underline rgba(128, 128, 128, 0.363);
+                @keyframes anim1 {
+                    0% {
+                        text-decoration: underline rgba(255, 255, 255, 0);
+                    }
+                    100% {
+                        text-decoration: underline white;
+                    }
+                }
+            }
         }
         i {
             color: $color-peach;
@@ -163,6 +175,9 @@ footer {
                     gap: 16px;
                     i {
                         font-size: 1.5rem;
+                        &:hover {
+                            color: $color-light-peach;
+                        }
                     }
                 }
             }
