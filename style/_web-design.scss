@@ -9,7 +9,7 @@
         text-align: center;
         width: 100%;
         border-radius: 15px;
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 375px) {
             @include margin(-24px);
             border-radius: 0;
             background: $color-peach;
@@ -36,9 +36,8 @@
         gap: 30px;
         margin-top: 160px;
         margin-bottom: 160px;
-        @media screen and (max-width: 1100px) {
-            margin-top: 120px;
-            margin-bottom: 120px;
+        @media screen and (max-width: 1200px) {
+            margin: 120px auto;
             grid-template-columns: 1fr;
         }
         @media screen and (max-width: 500px) {
@@ -46,9 +45,10 @@
             margin-bottom: 96px;
         }
         .cards {
-            @media screen and (max-width: 1100px) {
+            @media screen and (max-width: 1200px) {
                 display: flex;
                 height: 310px;
+                margin: 0 auto;
             }
             @media screen and (max-width: 500px) {
                 flex-direction: column;
@@ -59,7 +59,7 @@
                 img {
                     border-top-left-radius: 15px;
                     border-top-right-radius: 15px;
-                    @media screen and (max-width: 1100px) {
+                    @media screen and (max-width: 1200px) {
                         border-top-right-radius: 0;
                         border-bottom-left-radius: 15px;
                         height: 310px;
@@ -83,7 +83,7 @@
                 border-bottom-right-radius: 15px;
                 cursor: pointer;
                 transition: 0.2s;
-                @media screen and (max-width: 1100px) {
+                @media screen and (max-width: 1200px) {
                     height: 310px;
                     margin-top: 0;
                     border-bottom-left-radius: 0;
@@ -120,15 +120,13 @@
         justify-content: space-between;
         height: 308px;
         margin-bottom: 160px;
-
-        @media screen and (max-width: 1100px) {
+        position: relative;
+        @media screen and (max-width: 1200px) {
             flex-direction: column;
             height: 424px;
-            margin-left: 90px;
             margin-bottom: 135px;
         }
         @media screen and (max-width: 500px) {
-            margin-left: 95px;
             height: 524px;
             margin-bottom: 100px;
         }
@@ -142,9 +140,14 @@
                 left: 50%;
                 object-fit: cover;
                 transform: translate(-50%);
-                @media screen and (max-width: 1100px) {
+                @media screen and (max-width: 1200px) {
                     width: 689px;
-                    height: 200px;
+                    height: 190px;
+                }
+                @media screen and (max-width: 1000px) {
+                    width: 665px;
+                    height: 190px;
+                    margin: 0 auto;
                 }
                 @media screen and (max-width: 500px) {
                     width: 327px;
@@ -165,13 +168,21 @@
                 border-radius: 15px;
                 background: $color-peach-opacity;
             }
-            @media screen and (max-width: 1100px) {
+            @media screen and (max-width: 1200px) {
                 height: 190px;
+                width: 690px;
+                margin: 0 auto;
+                // align-items: stretch;
+            }
+            @media screen and (max-width: 1000px) {
+                width: 665px;
+                height: 190px;
+                margin: 0 auto;
             }
             @media screen and (max-width: 500px) {
                 height: 250px;
                 align-items: stretch;
-                width: 100%;
+                width: 327px;
             }
             h2 {
                 color: white;
