@@ -1,8 +1,9 @@
 header {
-    section {
+    .navigation {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
         div {
             height: 155px;
             display: flex;
@@ -27,25 +28,66 @@ header {
                 display: none;
             }
         }
-        ul {
-            display: flex;
-            align-items: center;
-            @media screen and (max-width: 915px) {
-                font-size: 14px;
-            }
-            @media screen and (max-width: 700px) {
-                font-size: 10px;
-            }
-            @media screen and (max-width: 501px) {
-                display: none;
-            }
-            li {
-                cursor: pointer;
-                padding: 15px 0 15px 42px;
-                a {
-                    color: $color-black;
+        .desktop-nav {
+            ul {
+                display: flex;
+                align-items: center;
+                @media screen and (max-width: 915px) {
+                    font-size: 14px;
+                }
+                @media screen and (max-width: 700px) {
+                    font-size: 10px;
+                }
+                @media screen and (max-width: 501px) {
+                    display: none;
+                }
+                li {
+                    cursor: pointer;
+                    padding: 15px 0 15px 42px;
+                    a {
+                        color: $color-black;
+                    }
                 }
             }
         }
+        .mobile-nav {
+            background: $color-black;
+            width: 120%;
+            height: 235px;
+            position: absolute;
+            top: -256px;
+            z-index: 1000;
+            transition: 0.5s;
+            left: 50%;
+            transform: translate(-50%);
+            @media screen and (min-width: 501px) {
+                display: none;
+            }
+            // @include margin(-24px);
+            ul {
+                display: flex;
+                flex-direction: column;
+                height: 235px;
+                justify-content: space-evenly;
+                li {
+                    padding-left: 40px;
+                }
+            }
+            a {
+                color: white;
+                font-size: 24px;
+                font-weight: 400;
+                letter-spacing: 2px;
+            }
+        }
+        .active {
+            top: 96px;
+        }
     }
+}
+main {
+    transition: 0.5s;
+}
+.shadow {
+    filter: brightness(70%);
 }
