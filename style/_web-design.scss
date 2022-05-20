@@ -9,6 +9,17 @@
         text-align: center;
         width: 100%;
         border-radius: 15px;
+
+        &::after {
+            content: url(../img/home/Rectangle.png);
+            position: absolute;
+            top: 300px;
+            left: 550px;
+            z-index: -1;
+            @media screen and (max-width: 1200px) {
+                display: none;
+            }
+        }
         @media screen and (max-width: 375px) {
             @include margin(-24px);
             border-radius: 0;
