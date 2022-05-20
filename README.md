@@ -1,35 +1,108 @@
 # Designo Project
 
 @Becode
+  
+    
+    In this exercise we have integrated the model of a figma design with the "pixel perfect" mentality. We started by making the parts in common with live share and then compartmentalizing the rest of the project as a sub-task that we then attributed to each of us. Communication was the key to this project.
+
+
+[The Figma mockup](https://www.figma.com/file/l95gv4piXhWCegSRZIXe3y/designo-becode?node-id=0%3A1)
+
+
+</br>
 
 ## Group
 
-Quentin, Olivier et Antoine
+_Communication is key_  
 
-## Tools
+ <img src="./img/home/melio_2.jpg" alt="quentin-profile" width="75" style="border-radius:50%"/></br>| | Quentin | |
 
-### Techno
-HTML
-CSS
-SASS
-JS
+ <img src="./img/home/profil_oli.jpg" alt="oli-profile" width="75" style="border-radius:50%"/></br>| | Olivier | |
 
-### Tools
-VScode
-Live Share
-Live Sass
+ <img src="./img/home/Wankul.png" alt="tatooine-profile" width="75" style="border-radius:50%"/></br>| | Antoine | |  
 
-GitHub
-GitBash
+ </br>
+
+[Our Web site](https://quentinmotte.github.io/designo/)
+
+
+</br>
 
 ## Method
 
+</br>
+
+## The tools we used
+
+### **Languages :** </br>
+- HTML</br>
+- CSS</br>
+- SASS</br>
+- JS
+
+### **Software and programs :** </br>
+- VScode</br>
+- Live Share</br>
+- Live Sass</br>
+- GitHub</br>
+- GitBash
+
+</br>
+
 ## Lighthouse
+
+moyenne desktop  
+
+moyenne mobile
+
+
+</br>
 
 ## What we can improve for our projects
 
+
 - BEM methodology
 - Mixins
-- 
+- ...
 
-## Requirements
+</br>
+
+## Instructions
+
+&#9745;  Observe the design carefully, you need to follow it strictly!  
+
+&#9745;  The website has to be responsive.  
+
+&#9745;  To help you to set up a naming convention for your classes in CSS we recommend to use the BEM methodology.  
+
+&#9745;  The website has to respond to the w3c validator.  
+
+&#9745;  Pay attention to your SEO (The Lighthouse extension can help you).  
+
+&#9745;  You must use Sass.  
+
+&#9745;  Think about some nice CSS effects/animations.  
+
+&#9745;  Make sure the site is BUG FREE.  
+
+&#9745;  Respect the deadline.  
+
+&#9745;  Everyone in the team must code.
+
+</br>
+
+### For GitHub
+
+&#9745;  Write a good README
+
+&#9745;  Mention a description and the website URL on the top of the repository
+
+</br>
+
+### Bonus
+75 %
+
+### Plus
+- favicon
+- lien sur logo
+- media querry intermédiaire 
