@@ -32,6 +32,7 @@ $color-light-grey: #f1f3f5;
     padding: 0;
     box-sizing: border-box;
     font-family: $font;
+    scroll-behavior: smooth;
 }
 body {
     overflow-x: hidden;

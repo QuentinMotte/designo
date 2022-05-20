@@ -138,7 +138,7 @@ footer {
                     }
                 }
             }
-            span {
+            .grey-line {
                 position: absolute;
                 width: 100%;
                 background: grey;
@@ -149,6 +149,14 @@ footer {
                 @media screen and (max-width: 630px) {
                     bottom: 140px;
                 }
+            }
+            #arrow-to-top {
+                position: fixed;
+                bottom: -100px;
+                right: 50px;
+                transform: scale(1.8);
+                cursor: pointer;
+                transition: 1s;
             }
         }
         .footer__section-second__info {

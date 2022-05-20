@@ -30,6 +30,8 @@ header {
             position: absolute;
             top: 39px;
             right: 24px;
+            cursor: pointer;
+
             span {
                 width: 24px;
                 height: 4px;
@@ -40,6 +42,23 @@ header {
                 display: none;
             }
         }
+        .burger {
+            span {
+                transition: 0.2s;
+            }
+            span:nth-child(1) {
+                transform: rotate(-45deg);
+                width: 30px;
+            }
+            span:nth-child(2) {
+                display: none;
+            }
+            span:nth-child(3) {
+                transform: rotate(45deg) translate(-5px, -6px);
+                width: 30px;
+            }
+        }
+
         .desktop-nav {
             ul {
                 display: flex;
@@ -109,6 +128,7 @@ header {
                 letter-spacing: 2px;
             }
         }
+
         .active {
             top: 96px;
         }
