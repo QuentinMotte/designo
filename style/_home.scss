@@ -11,7 +11,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 95px 95px 95px 95px;
-        overflow-y: hidden;
+        overflow: hidden;
         align-self: center;
 
         margin-bottom: 160px;
@@ -33,12 +33,15 @@
         @media screen and (max-width: 375px){
             @include margin (-24px);
             min-width: 375px;
+            border-radius: 0px;
         }
 
 
         .img-main-home-header {
             position: relative;
             height: 640px;
+            
+
 
             .phone {
                 position: relative;
@@ -53,13 +56,22 @@
                 }
             }
 
-            /*.circle {
+            .circle {
                 position: absolute;
                 z-index: 1;
                 height: 100%;
-                transform: translateX(-50%) rotate(-90deg);
-                left: 0%;
-            }*/
+                left: -68%;
+                
+                @media screen and (max-width: 1300px){
+                    top: -50%;
+                    left: 0%;
+                }
+
+                @media screen and (max-width: 375px){
+                    top: -50%;
+                    left: -16%;
+                }
+            }
         }
 
         .text {
@@ -160,6 +172,12 @@
 
             @media screen and (max-width: 400px) {
                 margin-bottom: 65px;
+                height: 250px;
+            }
+
+            @media screen and (max-width: 375px) {
+                margin-bottom: 17px;
+                height: 250px;
             }
 
 
@@ -224,6 +242,10 @@
             align-items: center;
             gap: 24px;
 
+            @media screen and (max-width: 400px) {
+                gap: 0px;;
+            }
+
             :first-child{
                 h2{
                     margin-top: 7px;
@@ -256,60 +278,64 @@
                 flex-direction: column;
             }
 
-                li {
-                    display: flex;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                @media screen and (max-width: 768px) {
+                    flex-direction: row;
+
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+
+                @media screen and (max-width: 500px) {
                     flex-direction: column;
-                    text-align: center;
+                }
+
+                img {
+                    align-self: center;
+                    width: 202px;
+                    height: 202px;
+                    margin-bottom: 48px;
 
                     @media screen and (max-width: 768px) {
-                        flex-direction: row;
-
-                        .text {
-                            display: flex;
-                            flex-direction: column;
-                        }
+                        margin-right: 48px;
                     }
 
                     @media screen and (max-width: 500px) {
-                        flex-direction: column;
+                        margin-right: 0px;
                     }
-
-                    img {
-                        align-self: center;
-                        width: 202px;
-                        height: 202px;
-                        margin-bottom: 48px;
-
-                        @media screen and (max-width: 768px) {
-                            margin-right: 48px;
-                        }
-                        
-                    }
-
-                    h3 {
-                        margin-bottom: 32px;
-
-                        @media screen and (max-width: 768px) {
-                            text-align: left;
-                        }
-
-                        @media screen and (max-width: 500px) {
-                            text-align: center;
-                        }
-                    }
-
-                    p {
-                        text-align: center;
-
-                        @media screen and (max-width: 768px) {
-                            text-align: left;
-                        }
-
-                        @media screen and (max-width: 500px) {
-                            text-align: center;
-                        }
-                    } 
                 }
+
+                h3 {
+                    margin-bottom: 32px;
+
+                    @media screen and (max-width: 768px) {
+                        text-align: left;
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        text-align: center;
+                    }
+                }
+
+                p {
+                    text-align: center;
+
+                    @media screen and (max-width: 768px) {
+                        text-align: left;
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        text-align: center;
+                    }
+                } 
+            }
         } 
     }  
 }
