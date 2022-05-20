@@ -1,24 +1,139 @@
 .main-locations {
 
+    margin-bottom: 160px;
+
+    @media screen and (max-width: 1300px) {
+        margin-bottom: 120px;
+    }
+
     article{
-        height: 326px;
-
+    
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 2fr;
+        gap: 30px;
+        margin-bottom: 32px;
 
-        img {
-            border-radius: 15px;
+        &:nth-child(2n+1) {
+            grid-template-columns: 2fr 1fr;
+
+            img{
+                order: 2;
+            }
+
+            @media screen and (max-width: 1300px) {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+
+                img {
+                    order: 0;
+                }
+            }
         }
 
-        text {
+        @media screen and (max-width: 1300px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 120px;
+        }
+
+        @media screen and (max-width: 650px) {
+            gap: 0px;
+            margin-bottom: 30px;
+            height: 714px;
+        }
+
+        @media screen and (max-width: 375px) {
+            @include margin (-24px);
+            min-width: 375px;
+        }
+
+        img {
+            height: 326px;
+            width: 350px;
             border-radius: 15px;
+
+            @media screen and (max-width: 1300px) {
+                width: 100%;
+            }
+
+            @media screen and (max-width: 650px) {
+                height: 320px;
+                border-radius: 0;
+            }
+        }
+
+        /* a effacer si pas utiliser
+        .img {
+            background-image: url(/img/location/Belgium.png);
+            height: 326px;
+            width: 350px;
+            border-radius: 15px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100% 0%;
+                
+            @media screen and (max-width: 1300px) {
+                width: 100%;
+            }
+    
+            @media screen and (max-width: 650px) {
+                height: 320px;
+                border-radius: 0;
+            }
+        }*/
+
+        .text {
+            height: 326px;
+            border-radius: 15px;
+            padding-left: 95px;
+
+            background-image: url(/img/location/LocationsBG.png);
             
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             
-            ul {
+            gap: 24px;
+
+            @media screen and (max-width: 650px) {
+                align-items: center;
+                height: 394px;
+                padding: 0px;
+                border-radius: 0;
+
+            }
+
+            h2 {
+                color: $color-peach;
+            }
+
+            h4 {
+                font-weight: 700;
+                line-height: 26px;
+            }
+
+            .infos {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
+                gap: 88px;
+
+                @media screen and (max-width: 650px) {
+                    flex-direction: column;
+                    gap: 24px;
+                }
                 
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: justify;
+
+                    @media screen and (max-width: 650px) {
+                        text-align: center;
+                    }
+                    
+                }
             }
         }
     }
