@@ -1,19 +1,17 @@
 .main-locations {
-
     margin-bottom: 160px;
 
     @media screen and (max-width: 1300px) {
         margin-bottom: 120px;
     }
 
-    article{
-    
+    article {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 30px;
         margin-bottom: 32px;
 
-        &:nth-child(2n+1) {
+        &:nth-child(2n + 1) {
             grid-template-columns: 2fr 1fr;
 
             picture {
@@ -44,11 +42,9 @@
         }
 
         @media screen and (max-width: 375px) {
-            @include margin (-24px);
+            @include margin(-24px);
             min-width: 375px;
         }
-
-
 
         picture {
             height: 326px;
@@ -80,20 +76,18 @@
             }
         }
 
-
-
         .text {
             height: 326px;
             border-radius: 15px;
             padding-left: 95px;
 
-            background: url(/img/location/LocationsBG.png) no-repeat center/cover;
+            background: url(../img/location/LocationsBG.png) no-repeat
+                center/cover;
 
-            
             display: flex;
             flex-direction: column;
             justify-content: center;
-            
+
             gap: 24px;
 
             @media screen and (max-width: 650px) {
@@ -101,7 +95,6 @@
                 height: 394px;
                 padding: 0px;
                 border-radius: 0;
-
             }
 
             h2 {
@@ -122,7 +115,6 @@
                     flex-direction: column;
                     gap: 24px;
                 }
-                
 
                 ul {
                     display: flex;
@@ -132,7 +124,6 @@
                     @media screen and (max-width: 650px) {
                         text-align: center;
                     }
-                    
                 }
             }
         }
