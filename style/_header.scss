@@ -30,9 +30,9 @@ header {
             position: absolute;
             top: 39px;
             right: 24px;
+            cursor: pointer;
 
             span {
-                // position: absolute;
                 width: 24px;
                 height: 4px;
                 background: $color-black;
