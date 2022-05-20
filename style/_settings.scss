@@ -36,6 +36,7 @@ $color-light-grey: #f1f3f5;
 }
 body {
     overflow-x: hidden;
+    z-index: -20;
     header {
         background: white;
         padding-right: 165px;
@@ -50,10 +51,11 @@ body {
             @include padding(24px);
         }
     }
+
     main {
         padding-right: 165px;
         padding-left: 165px;
-        background: white;
+
         @media screen and (max-width: 915px) {
             @include padding(60px);
         }
@@ -84,7 +86,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     background: white;
-    //font param
+
     h1,
     h2,
     h3,
