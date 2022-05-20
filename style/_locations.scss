@@ -87,8 +87,8 @@
             border-radius: 15px;
             padding-left: 95px;
 
-            background-image: url(/img/location/LocationsBG.png);
-            background-repeat: no-repeat;
+            background: url(/img/location/LocationsBG.png) no-repeat center/cover;
+
             
             display: flex;
             flex-direction: column;
