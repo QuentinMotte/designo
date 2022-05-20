@@ -9,8 +9,9 @@ const navBar = document.querySelector(".navigation");
 btnBurger.addEventListener("click", () => {
     navMobile.classList.toggle("active");
     content.classList.toggle("shadow");
+    btnBurger.classList.toggle("burger");
+    console.log(btnBurger);
 });
-console.log(navBar);
 content.addEventListener("click", () => {
     navMobile.classList.remove("active");
     content.classList.remove("shadow");
