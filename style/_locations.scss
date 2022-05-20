@@ -16,7 +16,7 @@
         &:nth-child(2n+1) {
             grid-template-columns: 2fr 1fr;
 
-            img{
+            picture {
                 order: 2;
             }
 
@@ -24,7 +24,7 @@
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr 1fr;
 
-                img {
+                picture {
                     order: 0;
                 }
             }
@@ -48,7 +48,9 @@
             min-width: 375px;
         }
 
-        img {
+
+
+        picture {
             height: 326px;
             width: 350px;
             border-radius: 15px;
@@ -61,7 +63,24 @@
                 height: 320px;
                 border-radius: 0;
             }
+
+            img {
+                height: 326px;
+                width: 350px;
+                border-radius: 15px;
+
+                @media screen and (max-width: 1300px) {
+                    width: 100%;
+                }
+
+                @media screen and (max-width: 650px) {
+                    height: 320px;
+                    border-radius: 0;
+                }
+            }
         }
+
+
 
         .text {
             height: 326px;
@@ -69,6 +88,7 @@
             padding-left: 95px;
 
             background-image: url(/img/location/LocationsBG.png);
+            background-repeat: no-repeat;
             
             display: flex;
             flex-direction: column;
