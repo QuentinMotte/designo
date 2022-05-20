@@ -34,6 +34,7 @@ $color-light-grey: #f1f3f5;
     font-family: $font;
 }
 body {
+    overflow-x: hidden;
     header {
         background: white;
         padding-right: 165px;
