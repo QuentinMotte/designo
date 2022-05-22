@@ -17,3 +17,50 @@
 //         }
 //     }
 // }
+
+.main-web-design__cards {
+
+    .cards__image {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+
+        @media screen and (max-width: 1200px) {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 15px;
+            
+        }
+        @media screen and (max-width: 500px) {
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 0px;
+        }
+    }
+
+    :nth-child(1) {
+        .cards__image {
+            background-color: #2E3947;
+        }
+    }
+    :nth-child(2) {
+        .cards__image {
+            background-color: #34B7A2;
+        }
+    }
+    
+    :nth-child(3) {
+        .cards__image {
+            background-color: #3F2F83;
+        }
+    }
+
+    :nth-child(4) {
+        .cards__image {
+            background-color: #40125A;
+        }
+    }
+
+    :nth-child(5) {
+        .cards__image {
+            background-color: #853A4D;
+        }
+    }
+}

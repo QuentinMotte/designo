@@ -106,7 +106,7 @@
                     display: flex;
                     justify-content: flex-end;
                     margin-top: 24px;
-                    @media screen and (max-width: 600px) {
+                    @media screen and (max-width: 1100px) {
                         justify-content: center;
                     }
                     input {
@@ -162,9 +162,13 @@
             }
         }
         button {
-            color: white;
             background: $color-peach;
             transition: 0.2s;
+
+            a {
+                color: $color-white;
+            }
+            
             &:hover {
                 background: $color-light-peach;
             }

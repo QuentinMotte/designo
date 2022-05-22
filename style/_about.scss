@@ -267,9 +267,13 @@
             }
         }
         button {
-            color: white;
             background: $color-peach;
             transition: 0.2s;
+
+            a {
+                color: $color-white;
+            }
+
             &:hover {
                 background: $color-light-peach;
             }
