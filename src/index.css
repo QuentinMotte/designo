@@ -756,6 +756,12 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
   border-radius: 15px;
   background: rgba(231, 130, 107, 0.5411764706);
 }
+@media screen and (max-width: 400px) {
+  .main-home .navigation-link article .link {
+    width: 100%;
+    height: 250px;
+  }
+}
 .main-home .navigation-link article .link h3 {
   color: #ffffff;
   margin-top: 24px;
@@ -820,6 +826,11 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
 @media screen and (max-width: 768px) {
   .main-home .section__info ul {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-home .section__info ul {
+    gap: 80px;
   }
 }
 .main-home .section__info ul li {
@@ -1200,9 +1211,11 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
   }
 }
 .main-about .location button {
-  color: white;
   background: #e7816b;
   transition: 0.2s;
+}
+.main-about .location button a {
+  color: #ffffff;
 }
 .main-about .location button:hover {
   background: #ffad9b;
@@ -1216,6 +1229,38 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
   .main-about .location button {
     margin-bottom: 48px;
   }
+}
+
+.main-web-design__cards .cards__image {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .main-web-design__cards .cards__image {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-web-design__cards .cards__image {
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+  }
+}
+.main-web-design__cards :nth-child(1) .cards__image {
+  background-color: #2E3947;
+}
+.main-web-design__cards :nth-child(2) .cards__image {
+  background-color: #34B7A2;
+}
+.main-web-design__cards :nth-child(3) .cards__image {
+  background-color: #3F2F83;
+}
+.main-web-design__cards :nth-child(4) .cards__image {
+  background-color: #40125A;
+}
+.main-web-design__cards :nth-child(5) .cards__image {
+  background-color: #853A4D;
 }
 
 .main-contact .contact {
@@ -1354,7 +1399,7 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
   justify-content: flex-end;
   margin-top: 24px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   .main-contact .contact .form form .submit-container {
     justify-content: center;
   }
@@ -1419,9 +1464,11 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
   }
 }
 .main-contact .location button {
-  color: white;
   background: #e7816b;
   transition: 0.2s;
+}
+.main-contact .location button a {
+  color: #ffffff;
 }
 .main-contact .location button:hover {
   background: #ffad9b;
@@ -1664,6 +1711,8 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
 @media screen and (max-width: 500px) {
   .main-web-app-design .main-web-design__cards .cards .cards__image img {
     width: 327px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
   }
 }
 .main-web-app-design .main-web-design__cards .cards .cards__text {
