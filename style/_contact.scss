@@ -62,9 +62,9 @@
                 position: absolute;
                 right: 0;
                 top: 20%;
-
+                display: none;
                 i {
-                    color: red;
+                    color: rgba(255, 0, 0, 0.877);
                 }
             }
             form {

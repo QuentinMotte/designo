@@ -1360,9 +1360,10 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
   position: absolute;
   right: 0;
   top: 20%;
+  display: none;
 }
 .main-contact .contact .form .warning i {
-  color: red;
+  color: rgba(255, 0, 0, 0.877);
 }
 .main-contact .contact .form form {
   position: relative;
