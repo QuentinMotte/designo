@@ -1350,6 +1350,11 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
     width: 573px;
   }
 }
+@media screen and (max-width: 730px) {
+  .main-contact .contact .text {
+    width: 453px;
+  }
+}
 @media screen and (max-width: 600px) {
   .main-contact .contact .text {
     width: 327px;
@@ -1358,12 +1363,42 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
 }
 .main-contact .contact .form .warning {
   position: absolute;
-  right: 0;
+  right: 0px;
   top: 20%;
   display: none;
 }
 .main-contact .contact .form .warning i {
-  color: rgba(255, 0, 0, 0.877);
+  color: white;
+}
+@media screen and (max-width: 1220px) {
+  .main-contact .contact .form .warning {
+    right: 20px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .main-contact .contact .form .warning {
+    right: 80px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main-contact .contact .form .warning {
+    right: 20px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .main-contact .contact .form .warning {
+    right: 80px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .main-contact .contact .form .warning {
+    right: 120px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-contact .contact .form .warning {
+    right: 20px;
+  }
 }
 .main-contact .contact .form form {
   position: relative;
@@ -1402,6 +1437,12 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
   outline: none;
   border-bottom: 1px solid rgb(255, 255, 255);
   color: white;
+}
+.main-contact .contact .form form .pseudo-message,
+.main-contact .contact .form form .message-error,
+.main-contact .contact .form form .email-error {
+  font-size: 0.7rem;
+  color: rgba(235, 209, 209, 0.822);
 }
 .main-contact .contact .form form textarea {
   border: none;
