@@ -157,6 +157,16 @@ footer {
                 transform: scale(1.8);
                 cursor: pointer;
                 transition: 1s;
+                border: 1px solid $color-peach;
+                padding: 5px 10px;
+                border-radius: 50%;
+                mix-blend-mode: exclusion;
+                animation: arrow1 2s infinite linear;
+                @keyframes arrow1 {
+                    50% {
+                        transform: scale(2);
+                    }
+                }
             }
         }
         .footer__section-second__info {

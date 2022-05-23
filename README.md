@@ -1,16 +1,18 @@
-# Designo Project
+# <img src="./img/home/Oval(1).png" alt="designo-logo"/> Designo Project
 
 @Becode
 
-    In this exercise we have integrated the model of a figma design with the "pixel perfect" mentality. We started by making the parts in common with live share and then compartmentalizing the rest of the project as a sub-task that we then attributed to each of us. Communication was the key to this project.
+    In this exercise we have integrated the model of a figma design with the "pixel perfect" mentality.
+    We started by making the parts in common with live share and then compartmentalizing the rest of the project as a sub-task that we then attributed to each of us.
+    Communication was the key to this project.
 
 [The Figma mockup](https://www.figma.com/file/l95gv4piXhWCegSRZIXe3y/designo-becode?node-id=0%3A1)
 
 </br>
 
-## Group
+## &#128101; Group
 
-_Communication is key_
+_No one can whistle a symphony. It takes a whole orchestra to play it._ - H.E. Luccock
 
 <img src="./img/home/melio_2.jpg" alt="quentin-profile" width="75" style="border-radius:50%"/></br>| | Quentin | |
 
@@ -26,9 +28,12 @@ _Communication is key_
 
 ## Method
 
+At first we organize our folders and files system and share out the work to manage to never have conflicts.  
+And we have communicate A LOT !!
+
 </br>
 
-## The tools we used
+## 🛠️ The tools we used
 
 ### **Languages :** </br>
 
@@ -47,11 +52,16 @@ _Communication is key_
 
 </br>
 
-## Lighthouse
+## &#128200; Lighthouse
 
-moyenne desktop
+<img src="./img/home/lighthouse-location.png" alt="tatooine-profile" width="500px" style="border-radius:15px"/>
+</br>
+</br>
 
-moyenne mobile
+|                 | Performance | Accessibility | Best Practices | SEO |
+| --------------- | ----------- | ------------- | -------------- | --- |
+| Moyenne Desktop | 100%        | 93%           | 99%            | 98% |
+| Moyenne Mobile  | 96%         | 93%           | 87%            | 99% |
 
 </br>
 
@@ -97,10 +107,21 @@ moyenne mobile
 
 ### Bonus
 
-75 %
+&#9745; Use a scroll to top button at the right bottom of the pages.
+
+&#9745; In tablet and mobile mode, there must be a functional hamburger menu.
+
+&#9745; Hide the menu when scroll down in the page and display it when scroll up. Take example on this website
+
+&#9744; Use a slighty parallax effect for some images (Example).
+
+</br>
 
 ### Plus
 
 -   favicon
--   lien sur logo
--   media querry intermédiaire
+-   link home on logo
+-   intermidiate media querry
+-   link in About and Contact pages target specific section on Locations page
+-   animation scroll up
+-   zoom on hover

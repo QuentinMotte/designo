@@ -127,8 +127,12 @@ body button {
   font-weight: 500;
   letter-spacing: 1px;
   border: none;
-  padding: 18px 25px 16px 24px;
+  padding: 18px 1px 16px 1px;
   border-radius: 8px;
+}
+body button a {
+  padding: 18px 25px 16px 24px;
+  border-radius: 15px;
 }
 
 header {
@@ -503,6 +507,22 @@ footer .footer__section-second .footer__section-second__nav #arrow-to-top {
   transform: scale(1.8);
   cursor: pointer;
   transition: 1s;
+  border: 1px solid #e7816b;
+  padding: 5px 10px;
+  border-radius: 50%;
+  mix-blend-mode: exclusion;
+  -webkit-animation: arrow1 2s infinite linear;
+          animation: arrow1 2s infinite linear;
+}
+@-webkit-keyframes arrow1 {
+  50% {
+    transform: scale(2);
+  }
+}
+@keyframes arrow1 {
+  50% {
+    transform: scale(2);
+  }
 }
 footer .footer__section-second .footer__section-second__info {
   display: flex;
@@ -1335,7 +1355,16 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
     text-align: center;
   }
 }
+.main-contact .contact .form .warning {
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+.main-contact .contact .form .warning i {
+  color: red;
+}
 .main-contact .contact .form form {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -1683,6 +1712,16 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
     margin-bottom: 96px;
   }
 }
+.main-web-app-design .main-web-design__cards .cards {
+  transition: 0.2s;
+}
+.main-web-app-design .main-web-design__cards .cards:hover {
+  box-shadow: 1px 6px 10px 6px rgba(0, 0, 0, 0.212);
+  -webkit-animation: cards 0.7s ease forwards;
+          animation: cards 0.7s ease forwards;
+  border-radius: 15px;
+  transform: scale(1.05);
+}
 @media screen and (max-width: 1200px) {
   .main-web-app-design .main-web-design__cards .cards {
     display: flex;
@@ -1777,7 +1816,7 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
     margin-bottom: 135px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .main-web-app-design .navigation-link {
     height: 524px;
     margin-bottom: 100px;
@@ -1801,14 +1840,28 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
     height: 190px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1040px) {
+  .main-web-app-design .navigation-link .img-link img {
+    width: 570px;
+    height: 190px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 920px) {
   .main-web-app-design .navigation-link .img-link img {
     width: 665px;
     height: 190px;
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 760px) {
+  .main-web-app-design .navigation-link .img-link img {
+    width: 570px;
+    height: 190px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 650px) {
   .main-web-app-design .navigation-link .img-link img {
     width: 327px;
     height: 250px;
@@ -1835,14 +1888,28 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1040px) {
+  .main-web-app-design .navigation-link .link {
+    width: 570px;
+    height: 190px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 920px) {
   .main-web-app-design .navigation-link .link {
     width: 665px;
     height: 190px;
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 760px) {
+  .main-web-app-design .navigation-link .link {
+    width: 570px;
+    height: 190px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 650px) {
   .main-web-app-design .navigation-link .link {
     height: 250px;
     align-items: stretch;
@@ -1852,7 +1919,7 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
 .main-web-app-design .navigation-link .link h2 {
   color: white;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .main-web-app-design .navigation-link .link h2 {
     font-size: 28px;
   }
@@ -1860,7 +1927,7 @@ footer .footer__section-second .footer__section-second__info .social ul i:hover 
 .main-web-app-design .navigation-link .link a {
   color: white;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .main-web-app-design .navigation-link .link a h3 {
     font-size: 15px;
   }

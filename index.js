@@ -5,6 +5,8 @@ const navMobile = document.querySelector(".mobile-nav");
 const content = document.querySelector("main");
 const navBar = document.querySelector(".navigation");
 const arrowToTop = document.querySelector("#arrow-to-top");
+const inputs = document.querySelector('input[type="email]');
+
 //
 //MOBILE NAVIGATION
 btnBurger.addEventListener("click", () => {
@@ -39,3 +41,30 @@ window.addEventListener("scroll", () => {
     }
 });
 console.log(arrowToTop);
+
+// function ValidateEmail(inputs) {
+//     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+//     if (inputs.value.match(mailformat)) {
+//         alert("Valid email address!");
+//         return true;
+//     } else {
+//         alert("You have entered an invalid email address!");
+//         return false;
+//     }
+// }
+// ValidateEmail();
+// console.log(inputsValue);
+
+// let email;
+
+// const emailChecker = (value) => {
+//     if (!value.match(/^[\w_-]+@[\w-]+\.[a-z]{2,4}$/i)) {
+//         inputs.style.display = "block";
+//         email = null;
+//     } else {
+//         inputs.style.display = "none";
+//         email = value;
+//     }
+//     console.log(emailChecker);
+//     emailChecker();
+// };

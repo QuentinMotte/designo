@@ -56,6 +56,13 @@
             margin-bottom: 96px;
         }
         .cards {
+            transition: 0.2s;
+            &:hover {
+                box-shadow: 1px 6px 10px 6px rgba(0, 0, 0, 0.212);
+                animation: cards 0.7s ease forwards;
+                border-radius: 15px;
+                transform: scale(1.05);
+            }
             @media screen and (max-width: 1200px) {
                 display: flex;
                 height: 310px;
@@ -139,7 +146,7 @@
             height: 424px;
             margin-bottom: 135px;
         }
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 650px) {
             height: 524px;
             margin-bottom: 100px;
         }
@@ -157,12 +164,22 @@
                     width: 689px;
                     height: 190px;
                 }
-                @media screen and (max-width: 1000px) {
+                @media screen and (max-width: 1040px) {
+                    width: 570px;
+                    height: 190px;
+                    margin: 0 auto;
+                }
+                @media screen and (max-width: 920px) {
                     width: 665px;
                     height: 190px;
                     margin: 0 auto;
                 }
-                @media screen and (max-width: 500px) {
+                @media screen and (max-width: 760px) {
+                    width: 570px;
+                    height: 190px;
+                    margin: 0 auto;
+                }
+                @media screen and (max-width: 650px) {
                     width: 327px;
                     height: 250px;
                 }
@@ -187,26 +204,38 @@
                 margin: 0 auto;
                 // align-items: stretch;
             }
-            @media screen and (max-width: 1000px) {
+            @media screen and (max-width: 1040px) {
+                width: 570px;
+                height: 190px;
+                margin: 0 auto;
+            }
+            @media screen and (max-width: 920px) {
+                // align-items: center;
                 width: 665px;
                 height: 190px;
                 margin: 0 auto;
             }
-            @media screen and (max-width: 500px) {
+            @media screen and (max-width: 760px) {
+                width: 570px;
+                height: 190px;
+                margin: 0 auto;
+            }
+            @media screen and (max-width: 650px) {
                 height: 250px;
                 align-items: stretch;
                 width: 327px;
+                // margin-bottom: 20px;
             }
             h2 {
                 color: white;
-                @media screen and (max-width: 500px) {
+                @media screen and (max-width: 650px) {
                     font-size: 28px;
                 }
             }
             a {
                 color: white;
                 h3 {
-                    @media screen and (max-width: 500px) {
+                    @media screen and (max-width: 650px) {
                         font-size: 15px;
                     }
                 }

@@ -58,8 +58,18 @@
             }
         }
         .form {
+            .warning {
+                position: absolute;
+                right: 0;
+                top: 20%;
+
+                i {
+                    color: red;
+                }
+            }
             form {
                 // height: 480px;
+                position: relative;
                 display: flex;
                 flex-direction: column;
                 input {
@@ -168,7 +178,7 @@
             a {
                 color: $color-white;
             }
-            
+
             &:hover {
                 background: $color-light-peach;
             }
