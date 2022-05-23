@@ -157,6 +157,7 @@ footer {
                 transform: scale(1.8);
                 cursor: pointer;
                 transition: 1s;
+                z-index: 100000;
                 border: 1px solid $color-peach;
                 padding: 5px 10px;
                 border-radius: 50%;

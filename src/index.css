@@ -507,6 +507,7 @@ footer .footer__section-second .footer__section-second__nav #arrow-to-top {
   transform: scale(1.8);
   cursor: pointer;
   transition: 1s;
+  z-index: 100000;
   border: 1px solid #e7816b;
   padding: 5px 10px;
   border-radius: 50%;
