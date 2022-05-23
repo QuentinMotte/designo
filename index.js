@@ -82,12 +82,12 @@ pseudoInput.addEventListener("input", (e) => {
 //
 
 textArea.addEventListener("input", (e) => {
-    if (textArea.value.length < 15) {
+    if (textArea.value.length < 15 && textArea.value.length > 0) {
         text.innerHTML = "This cant be empty and under 15 letters";
     } else {
         text.innerHTML = "";
     }
 });
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 });
